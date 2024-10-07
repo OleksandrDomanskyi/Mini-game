@@ -10,6 +10,14 @@ import { CommonModule } from '@angular/common';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class GameScoreboardComponent {
-  @Input() playerScore: number = 0;
-  @Input() computerScore: number = 0;
+  @Input() public playerScore: number = 0;
+  @Input() public computerScore: number = 0;
+
+  public incrementPlayerScore(): void {
+    this.playerScore += 1;
+  }
+
+  public incrementComputerScore(): void {
+    this.computerScore += 1;
+  }
 }

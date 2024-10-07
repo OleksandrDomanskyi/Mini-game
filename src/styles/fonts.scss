@@ -1,0 +1,27 @@
+:root {
+  --font-type-barlow: "Barlow", sans-serif;
+
+  .title-lg {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 80px;
+  }
+
+  .heading-lg {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+
+  .heading-md {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  .heading-sm {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+}

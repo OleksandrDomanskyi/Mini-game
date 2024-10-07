@@ -11,16 +11,16 @@ import { FormsModule } from '@angular/forms';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class GameControlsComponent {
-  @Output() start = new EventEmitter<void>();
-  @Output() timeChange = new EventEmitter<number>();
+  @Output() public start: EventEmitter<void> = new EventEmitter();
+  @Output() public timeChange: EventEmitter<number> = new EventEmitter();
 
-  intervalTime: number = 1000;
+  public intervalTime: number = 1000;
 
-  onStartClick() {
+  public onStartClick(): void {
     this.start.emit();
   }
 
-  onTimeChange() {
+  public onTimeChange(): void {
     this.timeChange.emit(this.intervalTime);
   }
 }

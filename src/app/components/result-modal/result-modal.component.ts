@@ -15,7 +15,7 @@ export class ResultModalComponent {
     @Inject(MAT_DIALOG_DATA) public data: { message: string }
   ) {}
 
-  onClose(): void {
+  public onClose(): void {
     this.dialogRef.close();
   }
 }

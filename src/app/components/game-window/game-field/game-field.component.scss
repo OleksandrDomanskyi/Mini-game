@@ -3,29 +3,27 @@
   justify-content: center;
   grid-template-rows: repeat(10, 40px);
   grid-template-columns: repeat(10, 40px);
-  gap: 5px;
-  margin-top: 30px;
-}
 
-.square {
-  width: 40px;
-  height: 40px;
-  background-color: blue;
-  border: 1px solid black;
-}
+  &__square {
+    width: 40px;
+    height: 40px;
+    background-color: var(--default-color);
+    border: 1px solid black;
 
-.square.active {
-  background-color: yellow;
-}
+    &.active {
+      background-color: var(--active-color);
+    }
 
-.square.success {
-  background-color: green;
-}
+    &.success {
+      background-color: var(--success-color);
+    }
 
-.square.missed {
-  background-color: red;
-}
+    &.missed {
+      background-color: var(--missed-color);
+    }
 
-.square.default {
-  background-color: blue;
+    &.default {
+      background-color: var(--default-color);
+    }
+  }
 }

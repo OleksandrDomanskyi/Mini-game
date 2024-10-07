@@ -1,6 +1,6 @@
 <div class="board">
-  <div class="row" *ngFor="let row of board; let rowIndex = index">
-    <div class="square" *ngFor="let square of row; let colIndex = index" [ngClass]="{
+  <div class="board__row" *ngFor="let row of board; let rowIndex = index">
+    <div class="board__square" *ngFor="let square of row; let colIndex = index" [ngClass]="{
            'active': square.state === 'active',
            'success': square.state === 'success',
            'missed': square.state === 'missed',

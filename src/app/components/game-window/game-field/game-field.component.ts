@@ -11,10 +11,10 @@ import { GameCell } from '../../../utils/interfaces/game-cell.interface';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class GameFieldComponent {
-  @Input() board: GameCell[][] = [];
-  @Output() cellClicked = new EventEmitter<{ row: number; col: number }>();
+  @Input() public board: GameCell[][] = [];
+  @Output() public cellClicked: EventEmitter<{ row: number; col: number }> = new EventEmitter();
 
-  onCellClick(rowIndex: number, colIndex: number) {
+  public onCellClick(rowIndex: number, colIndex: number): void {
     this.cellClicked.emit({ row: rowIndex, col: colIndex });
   }
 }

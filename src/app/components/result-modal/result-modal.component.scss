@@ -1,6 +1,10 @@
 :host {
-  display: block;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 400px;
+  min-height: 250px;
 }
 
 .mat-dialog-content {
