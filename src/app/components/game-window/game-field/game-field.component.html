@@ -1,0 +1,11 @@
+<div class="board">
+  <div class="row" *ngFor="let row of board; let rowIndex = index">
+    <div class="square" *ngFor="let square of row; let colIndex = index" [ngClass]="{
+           'active': square.state === 'active',
+           'success': square.state === 'success',
+           'missed': square.state === 'missed',
+           'default': square.state === 'default'
+         }" (click)="onCellClick(rowIndex, colIndex)">
+    </div>
+  </div>
+</div>

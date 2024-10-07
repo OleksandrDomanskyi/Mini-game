@@ -1,0 +1,5 @@
+<div class="controls">
+  <label for="timeInput">Час (мілісекунди):</label>
+  <input id="timeInput" type="number" [(ngModel)]="intervalTime" min="100" (input)="onTimeChange()" />
+  <button (click)="onStartClick()">Почати</button>
+</div>

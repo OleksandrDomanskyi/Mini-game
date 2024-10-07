@@ -1,0 +1,12 @@
+<div class="container">
+  <h1 class="title">Mini Game</h1>
+
+  <app-game-scoreboard [playerScore]="playerScore" [computerScore]="computerScore">
+  </app-game-scoreboard>
+
+  <app-game-field [board]="board" (cellClicked)="onCellClicked($event)">
+  </app-game-field>
+
+  <app-game-controls (start)="onStartGame()" (timeChange)="onTimeChange($event)">
+  </app-game-controls>
+</div>
